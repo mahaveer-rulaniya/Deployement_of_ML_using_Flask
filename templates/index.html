@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h2>Predict of survival</h2>
+         <h5.>Please use- Ticket class(1,2,3),Port of Embarkation(0,1,2) </h5.>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Pclass" placeholder="Ticket class" required="required" />
+        <input type="text" name="Age" placeholder="Age" required="required" />
+		<input type="text" name="Fare" placeholder="Passenger fare" required="required" />
+		<input type="text" name="Embarked" placeholder="Port of Embarkation" required="required" />
+ 		<input type="text" name="Fmembers" placeholder="No. of family members" required="required" />
+ 		<input type="text" name="Sex_male" placeholder="Male or not" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
