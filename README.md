@@ -24,7 +24,10 @@ Requirements consists of all the libraries that has to get installed in heroku e
 
 ## 4. Connect GitHub to Heroku
 Heroku is a multi-language cloud application platform that enables developers to deploy, scale, and manage their applications. Heroku is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.
+
+
 ![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbOjLuz9j6DwSLqIbIlDp5B1HQZoTcs-y4iQ&usqp=CAU "Heroku")
+
 Heroku gives the direct option to connect with GitHub and deploy the code.
 
 ## 5. Deploy the model
